@@ -91,7 +91,7 @@ function PlayGame() {
         
         let randomNumber = Math.floor(Math.random() * choice.length);
 
-        let playerSelection = prompt("Input your pick,rock, paper or scissors? ");
+        let playerSelection = prompt("Input your pick: rock, paper or scissors? ");
         
         console.log("Player selection: ", playerSelection);
 
