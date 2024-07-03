@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#scoreboard {
+    max-width: 40rem;
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    align-items: center;
+}
+.counter-container {
+    min-height: 4rem;
+    border: 1px solid midnightblue;
+    border-radius: .5rem;
+}
+.counter-container > p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+#counter {
+    display: flex;
+    width: 6rem;
+    min-height: 2.5rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+    gap: .5rem;
+    justify-content: center;
+}
+.playerlabel {
+    background-color:midnightblue ;
+    color: white;
+    min-width: 10rem;
+    min-height: 3rem;
+    text-align: center;
+    padding-top: .5rem;
+    font-size: 1.5rem;
+
+}
+.one {
+    border-bottom-left-radius: 1rem;
+}
+.two {
+    border-bottom-right-radius: 1rem;   
+}
+
+#container {
+    margin-inline: auto;
+    max-width: 30rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+#container > button {
+    border: none;
+    font-size: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header {
+    font-size: 4rem;
+    text-align: center;
+    background-color: midnightblue;
+    color: white;
+    max-width: 50rem;
+    margin-inline: auto;
+    padding-block: 1rem;
+    border-radius: 2rem;
+}
+.choice {
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.choice-text {
+    color: midnightblue;
+    font-size: 1.6rem;
+}
+
+#pitch {
+    max-width: 60rem;
+    border: 1rem solid black;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline: 5rem;
+}
+
+#pitch > div {
+    
+}
+
+.selection {
+    min-width: 15rem;
+    min-height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.versus {
+    font-size: 9rem;
+    padding: 4rem;
+    background-color: unset;
+}
+
+.selection-container > p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.playerChoice, .computerChoice {
+    font-size: 12rem;
+}
+
+.result {
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: midnightblue;
+    color: white;
+    max-width: 60rem;
+    margin-inline: auto;
+}
+
+.modal {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+    left: auto;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: ;
+    color: antiquewhite;
+}
+
+.modal-container {
+    background-color: midnightblue;
+    opacity: 1;
+    max-width: 30rem;
+    margin: auto;
+    min-height: 20rem;
+    border-radius: 1rem;
+    margin-top: 25rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.finalResult {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.playButton {
+    background-color: red;
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 2rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    cursor: pointer;
+}
