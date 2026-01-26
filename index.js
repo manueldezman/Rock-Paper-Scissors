@@ -31,7 +31,6 @@ function checkEndPoint(PlayerScore, ComputerScore){
 
 function playRound(playerSelection, computerSelection, PlayerScore, ComputerScore, round) {
     playerSelection = playerSelection.toLowerCase();
-    console.log(computerSelection);
     computerSelection = computerSelection.toLowerCase();
     
     if (playerSelection === computerSelection) {
@@ -164,7 +163,6 @@ const div = document.querySelector('#container');
     div.addEventListener('click', function(event) {
         let playerSelection;
         let randomNumber = Math.floor(Math.random() * choice.length);        
-        console.log(event.target.id);
 
     switch(event.target.id) {
         case "rock":
@@ -191,9 +189,6 @@ const div = document.querySelector('#container');
             break;
     } 
     
-    console.log("Player selection: ", playerSelection);
-
-    console.log("Computer selection: ", getComputerChoice(randomNumber));
 
     switch(computerSelection) {
         case "rock":
@@ -220,6 +215,5 @@ const div = document.querySelector('#container');
     
 
     result.textContent = `${playRound(playerSelection, computerSelection, PlayerScore, ComputerScore, round)}`;
-    console.log(`computer: ${Player} - player: ${Computer}`);
 }
     );
